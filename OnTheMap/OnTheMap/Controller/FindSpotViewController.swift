@@ -21,8 +21,11 @@ class FindSpotViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        activityIndicator.hidesWhenStopped = true
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
 
@@ -94,6 +97,10 @@ class FindSpotViewController: UIViewController {
             self.setGeoCodingStatus(false)
             self.performSegue(withIdentifier: "FinishSpot", sender: (location, coordinate))
         }
+    }
+    
+    override func dismissKeyboard() {
+        view.endEditing(true)
     }
 
 }

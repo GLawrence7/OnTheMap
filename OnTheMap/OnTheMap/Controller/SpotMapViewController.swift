@@ -44,11 +44,19 @@ class SpotMapViewController: UIViewController {
         // get User data : firstName, lastName
         UdacityClient.getUserData { (userData, error) in
             guard let userData = userData else {
+                
+                let dialogMessage = UIAlertController(title: "Error", message: "There was an error when downloading your data", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                    print("Ok button tapped")
+                 })
+                dialogMessage.addAction(ok)
+                self.present(dialogMessage, animated: true, completion: nil)
+                
                 return
             }
             
-            var firstName: String = "Yoshimi"
-            var lastName: String = "Kang"
+            let firstName: String = userData.firstName
+            let lastName: String = userData.lastName
      
             let studentLocationRequest = PostLocation(uniqueKey: userData.key, firstName: firstName, lastName: lastName, mapString: self.location, mediaURL: self.url, latitude: Float(self.coordinate.latitude), longitude: Float(self.coordinate.longitude))
             

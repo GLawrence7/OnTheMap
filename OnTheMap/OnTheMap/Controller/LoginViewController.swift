@@ -21,7 +21,10 @@ class LoginViewController: UIViewController {
         DispatchQueue.main.async {
             self.emailTextField.becomeFirstResponder()
         }
+        activityIndicator.hidesWhenStopped = true
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     
@@ -65,7 +68,7 @@ class LoginViewController: UIViewController {
     }
 
 
-  func handleLoginResponse(success: Bool, error: Error?){
+    func handleLoginResponse(success: Bool, error: Error?){
   
       if success {
           performSegue(withIdentifier: "completeLogin", sender: nil)
@@ -76,5 +79,9 @@ class LoginViewController: UIViewController {
          showLoginFailure(message: error?.localizedDescription ?? "Wrong Email or Password!!")
          setLoggingIn(false)
       }
+    }
+    
+    override func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

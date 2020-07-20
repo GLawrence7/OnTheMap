@@ -68,6 +68,8 @@ class MapViewController: UIViewController {
           
              guard let data = data else {
                  print(error?.localizedDescription ?? "")
+// REQUIRED
+// The user should be informed if downloading data goes wrong. You can display an alert if you like.
                  return
              }
              DispatchQueue.main.async {

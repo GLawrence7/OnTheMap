@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF7DC14C24C586C000382964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7DC14B24C586C000382964 /* AppDelegate.swift */; };
-		AF7DC15024C586C000382964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7DC14F24C586C000382964 /* ViewController.swift */; };
 		AF7DC15324C586C000382964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7DC15124C586C000382964 /* Main.storyboard */; };
 		AF7DC15524C586C300382964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7DC15424C586C300382964 /* Assets.xcassets */; };
 		AF7DC15824C586C300382964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7DC15624C586C300382964 /* LaunchScreen.storyboard */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		AF7DC14824C586C000382964 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7DC14B24C586C000382964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF7DC14F24C586C000382964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF7DC15224C586C000382964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7DC15424C586C300382964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7DC15724C586C300382964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				AF7DC16D24C5882900382964 /* Controller */,
 				AF7DC16E24C5883800382964 /* Model */,
 				AF7DC14B24C586C000382964 /* AppDelegate.swift */,
-				AF7DC14F24C586C000382964 /* ViewController.swift */,
 				AFCC6DD024C5957400B585D1 /* SceneDelegate.swift */,
 				AF7DC16F24C588BB00382964 /* Assets */,
 				AF7DC15924C586C300382964 /* Info.plist */,
@@ -275,7 +272,6 @@
 				AF7DC17924C589E900382964 /* UIViewController+Extension.swift in Sources */,
 				AF7DC18224C58F7E00382964 /* StudentLocation.swift in Sources */,
 				AF7DC17124C5899C00382964 /* LoginViewController.swift in Sources */,
-				AF7DC15024C586C000382964 /* ViewController.swift in Sources */,
 				AF7DC17724C589D300382964 /* FindSpotViewController.swift in Sources */,
 				AF7DC18A24C58FE100382964 /* StudentLocations.swift in Sources */,
 				AF7DC17B24C589FC00382964 /* SpotMapViewController.swift in Sources */,
